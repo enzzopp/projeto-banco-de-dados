@@ -20,8 +20,8 @@ for user in data['results']:
     SURNAMES.append(user['name']['last'])
 
 # Dados padrões
-NOME_DEPARTAMENTOS = ["Matemática", "Física", "Química", "Biologia", "Computação", "Estatística", "Engenharia", "Geofísica"]
-NOME_CURSOS = ["Matemática", "Engenharia Elétrica", "Engenharia Química", "Biomedicina", "Ciência da Computação", "Análise de Dados", "Engenharia Cívil", "Geologia"]
+NOME_DEPARTAMENTOS = ["'Matemática'", "'Física'", "'Química'", "'Biologia'", "'Computação'", "'Estatística'", "'Engenharia'", "'Geofísica'"]
+NOME_CURSOS = ["'Matemática'", "'Engenharia Elétrica'", "'Engenharia Química'", "'Biomedicina'", "'Ciência da Computação'", "'Análise de Dados'", "'Engenharia Cívil'", "'Geologia'"]
 
 # Gerando os dados completos
 DEPARTAMENTOS = []
@@ -45,7 +45,7 @@ def generate_id(existing_ids):
 def generate_departamento():
     deptos = []
     for departamento in NOME_DEPARTAMENTOS:
-        lugar = 'Prédio ' + ''.join(secrets.choice(LETTERS))
+        lugar = '\'' + 'Prédio ' + ''.join(secrets.choice(LETTERS)) + '\''
         id_depto = generate_id( [ [d['id_depto']] for d in deptos ] )
         deptos.append({
             'nome': departamento,
@@ -84,7 +84,7 @@ def generate_disciplinas(matrizes):
         for i in range(6):
             id_disciplina = generate_id([d['id_disciplina'] for d in disciplinas])
             id_matriz = matriz['id_matriz']
-            nome = ''.join(secrets.choice(LETTERS) for _ in range(2)) + '-' + ''.join(secrets.choice(STRING_NUMBERS) for _ in range(4))
+            nome = '\'' + ''.join(secrets.choice(LETTERS) for _ in range(2)) + '-' + ''.join(secrets.choice(STRING_NUMBERS) for _ in range(4)) + '\''
             semestre = secrets.randbelow(8) + 1
             disciplinas.append({
                 'id_disciplina': id_disciplina,
@@ -101,7 +101,7 @@ def generate_alunos(matrizes):
         for i in range(5):
             id_aluno = generate_id([a['id_aluno'] for a in alunos])
             id_curso = matriz['id_curso']
-            nome = random.choice(NAMES) + ' ' + random.choice(SURNAMES)
+            nome = '\'' + random.choice(NAMES) + ' ' + random.choice(SURNAMES) + '\''
             alunos.append({
                 'id_aluno': id_aluno,
                 'id_curso': id_curso,
@@ -131,7 +131,7 @@ def generate_professores(deptos):
         for i in range(3):
             id_professor = generate_id([p['id_professor'] for p in professores])
             id_depto = depto['id_depto']
-            nome = random.choice(NAMES) + ' ' + random.choice(SURNAMES)
+            nome = '\'' + random.choice(NAMES) + ' ' + random.choice(SURNAMES) + '\''
             professores.append({
                 'id_professor': id_professor,
                 'id_depto': id_depto, 
@@ -165,14 +165,14 @@ def generate_leciona(professores, cursos, matrizes, disciplinas):
                 disciplina['lecionada'] = True
                 lecionando += 1
     return leciona
-          
+
 # Seram 4 grupos de TCC, cursados cada por 5 alunos e orientado por 1 professor
 def generate_TCC():
     tcc = []
     for i in range(4):
         tcc.append({
             'id_tcc': generate_id([t['id_tcc'] for t in tcc]),
-            'titulo': 'Projeto ' + ''.join( secrets.choice(LETTERS) for n in range(3))
+            'titulo': '\'' + 'Projeto ' + ''.join( secrets.choice(LETTERS) for n in range(3)) + '\''
         })
     return tcc
 
@@ -221,76 +221,76 @@ file = open("dataInsertion.txt", "a", encoding="utf-8")
 def insert_departamentos(departamentos):
     query = "INSERT INTO Departamento (nome, lugar, id_depto) VALUES (%s, %s, %s)"
     for depto in departamentos:
-        file.write(query % (depto['nome'], depto['lugar'], depto['id_depto']) + "\n")
-    
+        file.write(query % (depto['nome'], depto['lugar'], depto['id_depto']) + ";"+ "\n")
+
 # Função para inserir dados na tabela Curso
 def insert_cursos(cursos):
     query = "INSERT INTO Curso (nome, id_curso, id_depto) VALUES (%s, %s, %s)"
     for curso in cursos:
-        file.write(query % (curso['nome'], curso['id_curso'], curso['id_depto']) + "\n")
-    
+        file.write(query % (curso['nome'], curso['id_curso'], curso['id_depto']) + ";"+ "\n")
+
 # Função para inserir dados na tabela MatrizCurricular
 def insert_matriz_curricular(matriz_curricular):
     query = "INSERT INTO MatrizCurricular (id_matriz, id_curso) VALUES (%s, %s)"
     for matriz in matriz_curricular:
-        file.write(query % (matriz['id_matriz'], matriz['id_curso']) + "\n")
-    
+        file.write(query % (matriz['id_matriz'], matriz['id_curso']) + ";"+ "\n")
+
 # Função para inserir dados na tabela Disciplina
 def insert_disciplinas(disciplinas):
     query = "INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES (%s, %s, %s, %s)"
     for disciplina in disciplinas:
-        file.write(query % (disciplina['nome'], disciplina['semestre'], disciplina['id_disciplina'], disciplina['id_matriz']) + "\n")
-    
+        file.write(query % (disciplina['nome'], disciplina['semestre'], disciplina['id_disciplina'], disciplina['id_matriz']) + ";"+ "\n")
+
 # Função para inserir dados na tabela Aluno
 def insert_alunos(alunos):
     query = "INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (%s, %s, %s)"
     for aluno in alunos:
-        file.write(query % (aluno['id_aluno'], aluno['nome'], aluno['id_curso']) + "\n")
-    
+        file.write(query % (aluno['id_aluno'], aluno['nome'], aluno['id_curso']) + ";"+ "\n")
+
 # Função para inserir dados na tabela Professor
 def insert_professores(professores):
     query = "INSERT INTO Professor (id_professor, nome, id_depto) VALUES (%s, %s, %s)"
     for professor in professores:
-        file.write(query % (professor['id_professor'], professor['nome'], professor['id_depto']) + "\n")
-    
+        file.write(query % (professor['id_professor'], professor['nome'], professor['id_depto']) + ";"+ "\n")
+
 # Função para inserir dados na tabela TCC
 def insert_tccs(tccs):
     query = "INSERT INTO TCC (id_tcc, titulo) VALUES (%s, %s)"
     for tcc in tccs:
-        file.write(query % (tcc['id_tcc'], tcc['titulo']) + "\n")
-    
+        file.write(query % (tcc['id_tcc'], tcc['titulo']) + ";"+ "\n")
+
 # Função para inserir dados na tabela Cursa
 def insert_cursa(cursa):
     query = "INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (%s, %s, %s, %s, %s)"
     for cursa in cursa:
-        file.write(query % (cursa['ano'], cursa['semestre'], cursa['nota'], cursa['id_disciplina'], cursa['id_aluno']) + "\n")
-    
+        file.write(query % (cursa['ano'], cursa['semestre'], cursa['nota'], cursa['id_disciplina'], cursa['id_aluno']) + ";"+ "\n")
+
 # Função para inserir dados na tabela Participa
 def insert_participa(participa):
     query = "INSERT INTO Participa (id_tcc, id_professor, id_aluno) VALUES (%s, %s, %s)"
     for participa in participa:
-        file.write(query % (participa['id_tcc'], participa['id_professor'], participa['id_aluno']) + "\n")
-    
+        file.write(query % (participa['id_tcc'], participa['id_professor'], participa['id_aluno']) + ";"+ "\n")
+
 # Função para inserir dados na tabela Leciona
 def insert_leciona(leciona):
     query = "INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (%s, %s, %s, %s)"
     for leciona in leciona:
-        file.write(query % (leciona['ano'], leciona['semestre'], leciona['id_disciplina'], leciona['id_professor']) + "\n")
-    
+        file.write(query % (leciona['ano'], leciona['semestre'], leciona['id_disciplina'], leciona['id_professor']) + ";"+ "\n")
+
 # Atualiza os dados do Departamentos para inserir o id_professor como foreign key
 def update_departamento_with_professor(departamentos):
     query = "UPDATE Departamento SET id_professor = %s WHERE id_depto = %s"
     for depto in departamentos:
         # Verifica se o departamento possui um id_professor
         if 'id_professor' in depto:
-            file.write(query % (depto['id_professor'], depto['id_depto']) + "\n")
-    
+            file.write(query % (depto['id_professor'], depto['id_depto']) + ";"+ "\n")
+
 def update_cursos_with_matriz(cursos):
     query = "UPDATE Curso SET id_matriz = %s WHERE id_curso = %s"
     for curso in cursos:
         if 'id_matriz' in curso:
-            file.write(query % (curso['id_matriz'], curso['id_curso']) + "\n")
-    
+            file.write(query % (curso['id_matriz'], curso['id_curso']) + ";"+ "\n")
+
 
 # Inserindo os dados na ordem correta para garantir a integridade referencial
 insert_departamentos(DEPARTAMENTOS)
