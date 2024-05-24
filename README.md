@@ -41,7 +41,7 @@ O sistema de gestão de faculdade abrange as seguintes funcionalidades e estrutu
     ```bash
     python dataGenerator.py
     ```
-# Diagrama de Relacionamento
+## Diagrama de Relacionamento
 
 Este é o diagrama de relacionamento das tabelas do banco de dados usando Mermaid.
 
