@@ -41,6 +41,91 @@ O sistema de gestão de faculdade abrange as seguintes funcionalidades e estrutu
     ```bash
     python dataGenerator.py
     ```
+# Diagrama de Relacionamento
+
+Este é o diagrama de relacionamento das tabelas do banco de dados usando Mermaid.
+
+```mermaid
+erDiagram
+    Departamento {
+        VARCHAR nome
+        VARCHAR lugar
+        INT id_depto PK
+        INT id_professor
+    }
+    
+    Curso {
+        VARCHAR nome
+        INT id_curso PK
+        INT id_depto
+        INT id_matriz
+    }
+    
+    Disciplina {
+        VARCHAR nome
+        NUMERIC semestre
+        INT id_disciplina PK
+        INT id_matriz
+    }
+    
+    MatrizCurricular {
+        INT id_matriz PK
+        INT id_curso
+    }
+    
+    Cursa {
+        NUMERIC ano
+        NUMERIC nota
+        NUMERIC semestre
+        INT id_disciplina
+        INT id_aluno
+    }
+    
+    Aluno {
+        INT id_aluno PK
+        INT id_curso
+        VARCHAR nome
+    }
+    
+    Participa {
+        INT id_tcc
+        INT id_professor
+        INT id_aluno
+    }
+    
+    TCC {
+        INT id_tcc PK
+        VARCHAR titulo
+    }
+    
+    Professor {
+        INT id_professor PK
+        INT id_depto
+        VARCHAR nome
+    }
+    
+    Leciona {
+        INT id_disciplina
+        INT id_professor
+        NUMERIC ano
+        NUMERIC semestre
+    }
+
+    Departamento ||--o{ Professor : "id_professor"
+    Departamento ||--o{ Curso : "id_depto"
+    Curso ||--o{ MatrizCurricular : "id_matriz"
+    MatrizCurricular ||--o{ Disciplina : "id_matriz"
+    MatrizCurricular ||--o{ Curso : "id_curso"
+    Disciplina ||--o{ Cursa : "id_disciplina"
+    Aluno ||--o{ Cursa : "id_aluno"
+    Curso ||--o{ Aluno : "id_curso"
+    TCC ||--o{ Participa : "id_tcc"
+    Professor ||--o{ Participa : "id_professor"
+    Aluno ||--o{ Participa : "id_aluno"
+    Departamento ||--o{ Professor : "id_depto"
+    Disciplina ||--o{ Leciona : "id_disciplina"
+    Professor ||--o{ Leciona : "id_professor"
+```
 
 ## Contribuidores
 
