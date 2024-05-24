@@ -23,10 +23,10 @@ O sistema de gestão de faculdade abrange as seguintes funcionalidades e estrutu
 
 1. Clone este repositório:
     ```bash
-    git clone https://github.com/enzzopp/projetoBancoDeDados.git
+    git clone https://github.com/enzzopp/projeto-banco-de-dados.git
 2. Navegue até o diretório do projeto:
     ```bash
-    cd projetoBancoDeDados
+    cd projeto-banco-de-dados
     ```
 3. Execute os seguintes arquivos SQL para criar e popular o banco de dados no Cockroach:
     ```bash
