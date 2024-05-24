@@ -48,49 +48,49 @@ Este é o diagrama de relacionamento das tabelas do banco de dados usando Mermai
 ```mermaid
 erDiagram
     Departamento {
+        INT id_depto PK
+        INT id_professor FK
         VARCHAR nome
         VARCHAR lugar
-        INT id_depto PK
-        INT id_professor
     }
     
     Curso {
-        VARCHAR nome
         INT id_curso PK
-        INT id_depto
-        INT id_matriz
+        INT id_depto FK
+        INT id_matriz FK
+        VARCHAR nome
     }
     
     Disciplina {
+        INT id_disciplina PK
+        INT id_matriz FK
         VARCHAR nome
         NUMERIC semestre
-        INT id_disciplina PK
-        INT id_matriz
     }
     
     MatrizCurricular {
         INT id_matriz PK
-        INT id_curso
+        INT id_curso FK
     }
     
     Cursa {
+        INT id_disciplina FK
+        INT id_aluno FK
         NUMERIC ano
         NUMERIC nota
         NUMERIC semestre
-        INT id_disciplina
-        INT id_aluno
     }
     
     Aluno {
         INT id_aluno PK
-        INT id_curso
+        INT id_curso FK
         VARCHAR nome
     }
     
     Participa {
-        INT id_tcc
-        INT id_professor
-        INT id_aluno
+        INT id_tcc FK
+        INT id_professor FK
+        INT id_aluno FK
     }
     
     TCC {
@@ -100,13 +100,13 @@ erDiagram
     
     Professor {
         INT id_professor PK
-        INT id_depto
+        INT id_depto FK
         VARCHAR nome
     }
     
     Leciona {
-        INT id_disciplina
-        INT id_professor
+        INT id_disciplina FK
+        INT id_professor FK
         NUMERIC ano
         NUMERIC semestre
     }
