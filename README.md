@@ -23,25 +23,23 @@ O sistema de gestão de faculdade abrange as seguintes funcionalidades e estrutu
 
 1. Clone este repositório:
     ```bash
-    git clone https://github.com/usuario/projeto-sistema-faculdade.git
-    ```
+    git clone https://github.com/enzzopp/projetoBancoDeDados.git
 2. Navegue até o diretório do projeto:
     ```bash
-    cd projeto-sistema-faculdade
+    cd projetoBancoDeDados
     ```
-3. Execute os scripts SQL para criar e popular o banco de dados:
+3. Execute os seguintes arquivos SQL para criar e popular o banco de dados:
     ```bash
-    mysql -u usuario -p < scripts/criar_bd.sql
-    mysql -u usuario -p < scripts/popular_bd.sql
+    createSchema.sql
+    dataInsertion.sql
     ```
-4. Configure as variáveis de ambiente necessárias no arquivo `.env`.
-5. Execute os scripts Python para gerar dados de teste:
+4. Execute as queries a partir do arquivo SQL::
     ```bash
-    python data_generation/gerar_dados.py
+    queries.sql
     ```
-6. Execute a aplicação:
+5. Execute os scripts Python para gerar dados de teste (OPCIONAL):
     ```bash
-    [comando para iniciar a aplicação, ex: python src/app.py]
+    python dataGenerator.py
     ```
 
 ## Contribuidores
