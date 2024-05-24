@@ -28,7 +28,7 @@ O sistema de gestão de faculdade abrange as seguintes funcionalidades e estrutu
     ```bash
     cd projetoBancoDeDados
     ```
-3. Execute os seguintes arquivos SQL para criar e popular o banco de dados:
+3. Execute os seguintes arquivos SQL para criar e popular o banco de dados no Cockroach:
     ```bash
     createSchema.sql
     dataInsertion.sql
