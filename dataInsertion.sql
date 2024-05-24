@@ -1,488 +1,488 @@
 -- Dados gerados a partir do código python EncheBanco.py
 
 -- Gerando Departamentos
-INSERT INTO Departamento (nome, lugar, id_depto) VALUES ('Matemática', 'Prédio V', 7106);
-INSERT INTO Departamento (nome, lugar, id_depto) VALUES ('Física', 'Prédio E', 8079);
-INSERT INTO Departamento (nome, lugar, id_depto) VALUES ('Química', 'Prédio R', 2259);
-INSERT INTO Departamento (nome, lugar, id_depto) VALUES ('Biologia', 'Prédio R', 6580);
-INSERT INTO Departamento (nome, lugar, id_depto) VALUES ('Computação', 'Prédio L', 8315);
-INSERT INTO Departamento (nome, lugar, id_depto) VALUES ('Estatística', 'Prédio A', 7091);
-INSERT INTO Departamento (nome, lugar, id_depto) VALUES ('Engenharia', 'Prédio P', 2620);
-INSERT INTO Departamento (nome, lugar, id_depto) VALUES ('Geofísica', 'Prédio N', 2508);
+INSERT INTO Departamento (nome, lugar, id_depto) VALUES ('Matemática', 'Prédio J', 7742);
+INSERT INTO Departamento (nome, lugar, id_depto) VALUES ('Física', 'Prédio Z', 9999);
+INSERT INTO Departamento (nome, lugar, id_depto) VALUES ('Química', 'Prédio P', 8915);
+INSERT INTO Departamento (nome, lugar, id_depto) VALUES ('Biologia', 'Prédio D', 787);
+INSERT INTO Departamento (nome, lugar, id_depto) VALUES ('Computação', 'Prédio Q', 1536);
+INSERT INTO Departamento (nome, lugar, id_depto) VALUES ('Estatística', 'Prédio F', 7153);
+INSERT INTO Departamento (nome, lugar, id_depto) VALUES ('Engenharia', 'Prédio A', 6334);
+INSERT INTO Departamento (nome, lugar, id_depto) VALUES ('Geofísica', 'Prédio H', 7600);
 
 -- Gerando Cursos
-INSERT INTO Curso (nome, id_curso, id_depto) VALUES ('Matemática', 2198, 7106);
-INSERT INTO Curso (nome, id_curso, id_depto) VALUES ('Engenharia Elétrica', 9171, 8079);
-INSERT INTO Curso (nome, id_curso, id_depto) VALUES ('Engenharia Química', 8491, 2259);
-INSERT INTO Curso (nome, id_curso, id_depto) VALUES ('Biomedicina', 5440, 6580);
-INSERT INTO Curso (nome, id_curso, id_depto) VALUES ('Ciência da Computação', 3558, 8315);
-INSERT INTO Curso (nome, id_curso, id_depto) VALUES ('Análise de Dados', 946, 7091);
-INSERT INTO Curso (nome, id_curso, id_depto) VALUES ('Engenharia Civil', 8464, 2620);
-INSERT INTO Curso (nome, id_curso, id_depto) VALUES ('Geologia', 3167, 2508);
+INSERT INTO Curso (nome, id_curso, id_depto) VALUES ('Matemática', 337, 7742);
+INSERT INTO Curso (nome, id_curso, id_depto) VALUES ('Engenharia Elétrica', 867, 9999);
+INSERT INTO Curso (nome, id_curso, id_depto) VALUES ('Engenharia Química', 4122, 8915);
+INSERT INTO Curso (nome, id_curso, id_depto) VALUES ('Biomedicina', 3028, 787);
+INSERT INTO Curso (nome, id_curso, id_depto) VALUES ('Ciência da Computação', 4600, 1536);
+INSERT INTO Curso (nome, id_curso, id_depto) VALUES ('Análise de Dados', 3298, 7153);
+INSERT INTO Curso (nome, id_curso, id_depto) VALUES ('Engenharia Cívil', 494, 6334);
+INSERT INTO Curso (nome, id_curso, id_depto) VALUES ('Geologia', 7990, 7600);
 
 -- Gerando Matrizes Curriculares
-INSERT INTO MatrizCurricular (id_matriz, id_curso) VALUES (7445, 2198)
-INSERT INTO MatrizCurricular (id_matriz, id_curso) VALUES (5862, 9171)
-INSERT INTO MatrizCurricular (id_matriz, id_curso) VALUES (2423, 8491)
-INSERT INTO MatrizCurricular (id_matriz, id_curso) VALUES (8941, 5440)
-INSERT INTO MatrizCurricular (id_matriz, id_curso) VALUES (2945, 3558)
-INSERT INTO MatrizCurricular (id_matriz, id_curso) VALUES (8192, 946)
-INSERT INTO MatrizCurricular (id_matriz, id_curso) VALUES (9326, 8464)
-INSERT INTO MatrizCurricular (id_matriz, id_curso) VALUES (2160, 3167)
+INSERT INTO MatrizCurricular (id_matriz, id_curso) VALUES (1387, 337);
+INSERT INTO MatrizCurricular (id_matriz, id_curso) VALUES (3333, 867);
+INSERT INTO MatrizCurricular (id_matriz, id_curso) VALUES (6787, 4122);
+INSERT INTO MatrizCurricular (id_matriz, id_curso) VALUES (3655, 3028);
+INSERT INTO MatrizCurricular (id_matriz, id_curso) VALUES (383, 4600);
+INSERT INTO MatrizCurricular (id_matriz, id_curso) VALUES (2905, 3298);
+INSERT INTO MatrizCurricular (id_matriz, id_curso) VALUES (2408, 494);
+INSERT INTO MatrizCurricular (id_matriz, id_curso) VALUES (8678, 7990);
 
 -- Gerando Disciplinas
-INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES (LQ-4811, 5, 5368, 7445)
-INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES (DW-0613, 8, 1382, 7445)
-INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES (XG-8512, 3, 8972, 7445)
-INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES (OI-7791, 3, 2051, 7445)
-INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES (YW-1110, 6, 4038, 7445)
-INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES (WR-0271, 2, 4475, 7445)
-INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES (YY-8854, 4, 9912, 5862)
-INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES (HS-5848, 1, 3812, 5862)
-INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES (AB-0358, 4, 3242, 5862)
-INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES (TZ-6646, 4, 5729, 5862)
-INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES (MB-8271, 8, 6615, 5862)
-INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES (MV-5719, 4, 9346, 5862)
-INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES (XX-2933, 5, 8178, 2423)
-INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES (CI-1200, 1, 7526, 2423)
-INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES (DH-6829, 5, 1184, 2423)
-INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES (DF-7936, 4, 5540, 2423)
-INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES (SL-6391, 6, 4006, 2423)
-INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES (GJ-3792, 7, 9094, 2423)
-INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES (AP-8447, 4, 5912, 8941)
-INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES (ZX-0552, 8, 4187, 8941)
-INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES (EP-0880, 6, 4139, 8941)
-INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES (XX-2940, 2, 1814, 8941)
-INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES (CA-4792, 1, 343, 8941)
-INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES (BK-4319, 5, 9514, 8941)
-INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES (BH-0426, 7, 8421, 2945)
-INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES (HG-7079, 3, 6228, 2945)
-INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES (EJ-6592, 3, 6911, 2945)
-INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES (AD-3177, 7, 786, 2945)
-INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES (VO-1265, 8, 1674, 2945)
-INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES (RT-6452, 7, 1877, 2945)
-INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES (BS-3031, 6, 3151, 8192)
-INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES (YK-3942, 2, 1163, 8192)
-INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES (PF-7855, 7, 8055, 8192)
-INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES (HE-8570, 8, 5212, 8192)
-INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES (GM-1573, 3, 8877, 8192)
-INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES (FW-0905, 7, 9110, 8192)
-INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES (PC-4060, 3, 1063, 9326)
-INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES (KN-4266, 2, 7440, 9326)
-INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES (TU-9185, 3, 9848, 9326)
-INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES (XE-9036, 7, 5453, 9326)
-INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES (EO-7277, 8, 1061, 9326)
-INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES (KE-5664, 8, 3604, 9326)
-INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES (BF-9554, 6, 5166, 2160)
-INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES (DX-7014, 1, 9212, 2160)
-INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES (YP-2611, 5, 615, 2160)
-INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES (QV-3180, 4, 3118, 2160)
-INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES (PF-7233, 8, 8814, 2160)
-INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES (XF-4501, 3, 199, 2160)
+INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES ('QS-5419', 4, 657, 1387);
+INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES ('GV-1382', 8, 469, 1387);
+INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES ('GI-2152', 5, 2910, 1387);
+INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES ('NJ-3213', 4, 2304, 1387);
+INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES ('CZ-5375', 2, 8131, 1387);
+INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES ('GS-0274', 3, 2896, 1387);
+INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES ('FN-8592', 5, 5453, 3333);
+INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES ('PI-6340', 7, 8538, 3333);
+INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES ('YD-5053', 7, 110, 3333);
+INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES ('VX-3783', 4, 9598, 3333);
+INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES ('SN-1991', 3, 7470, 3333);
+INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES ('WK-4213', 8, 5413, 3333);
+INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES ('VD-9569', 4, 36, 6787);
+INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES ('UV-6367', 2, 8261, 6787);
+INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES ('AM-0070', 4, 7145, 6787);
+INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES ('QE-9552', 5, 9031, 6787);
+INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES ('UO-2798', 8, 2123, 6787);
+INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES ('KX-7830', 5, 8826, 6787);
+INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES ('RS-6285', 8, 4102, 3655);
+INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES ('FU-0716', 4, 5193, 3655);
+INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES ('OC-8601', 7, 6231, 3655);
+INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES ('CY-9968', 7, 2011, 3655);
+INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES ('FD-1311', 4, 1663, 3655);
+INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES ('TQ-3453', 7, 462, 3655);
+INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES ('SN-9666', 7, 2971, 383);
+INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES ('QU-2560', 5, 3959, 383);
+INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES ('JP-7126', 3, 2324, 383);
+INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES ('TO-7889', 8, 4269, 383);
+INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES ('IG-9016', 6, 1332, 383);
+INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES ('KS-0356', 5, 54, 383);
+INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES ('ZZ-1193', 5, 9213, 2905);
+INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES ('KY-6461', 2, 219, 2905);
+INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES ('KU-0867', 4, 9246, 2905);
+INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES ('MV-1254', 4, 7738, 2905);
+INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES ('IZ-9235', 7, 2460, 2905);
+INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES ('WY-8600', 1, 356, 2905);
+INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES ('RC-6285', 5, 6729, 2408);
+INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES ('XU-1688', 1, 2051, 2408);
+INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES ('PC-5358', 1, 8147, 2408);
+INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES ('CA-1440', 2, 2033, 2408);
+INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES ('LH-4103', 4, 3405, 2408);
+INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES ('LK-9095', 4, 4409, 2408);
+INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES ('BU-9091', 3, 1246, 8678);
+INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES ('LT-6349', 6, 9005, 8678);
+INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES ('RI-1855', 2, 7456, 8678);
+INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES ('GI-5061', 1, 8234, 8678);
+INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES ('HY-4001', 3, 3178, 8678);
+INSERT INTO Disciplina (nome, semestre, id_disciplina, id_matriz) VALUES ('PI-9621', 2, 95, 8678);
 
 -- Gerando Professores
-INSERT INTO Professor (id_professor, nome, id_depto) VALUES (3841, Deodora da Mata, 7106)
-INSERT INTO Professor (id_professor, nome, id_depto) VALUES (8418, Deodora Souza, 7106)
-INSERT INTO Professor (id_professor, nome, id_depto) VALUES (9711, Dener Cavalcanti, 7106)
-INSERT INTO Professor (id_professor, nome, id_depto) VALUES (9117, Benjamim Dias, 8079)
-INSERT INTO Professor (id_professor, nome, id_depto) VALUES (1606, Soraia da Mata, 8079)
-INSERT INTO Professor (id_professor, nome, id_depto) VALUES (3988, Andresa Cardoso, 8079)
-INSERT INTO Professor (id_professor, nome, id_depto) VALUES (5011, Sauro Lima, 2259)
-INSERT INTO Professor (id_professor, nome, id_depto) VALUES (7760, Sauro Foga�a, 2259)
-INSERT INTO Professor (id_professor, nome, id_depto) VALUES (8062, Alana Silva, 2259)
-INSERT INTO Professor (id_professor, nome, id_depto) VALUES (4419, Fernanda Alves, 6580)
-INSERT INTO Professor (id_professor, nome, id_depto) VALUES (138, Adelmiro Porto, 6580)
-INSERT INTO Professor (id_professor, nome, id_depto) VALUES (1394, Garibaldo Rezende, 6580)
-INSERT INTO Professor (id_professor, nome, id_depto) VALUES (1727, Fernandino Jesus, 8315)
-INSERT INTO Professor (id_professor, nome, id_depto) VALUES (1747, Felismino da Mata, 8315)
-INSERT INTO Professor (id_professor, nome, id_depto) VALUES (1751, Arquibaldo Campos, 8315)
-INSERT INTO Professor (id_professor, nome, id_depto) VALUES (563, Fernandino Alves, 7091)
-INSERT INTO Professor (id_professor, nome, id_depto) VALUES (4426, Maur�cio da Cruz, 7091)
-INSERT INTO Professor (id_professor, nome, id_depto) VALUES (7630, Pr�spero de Souza, 7091)
-INSERT INTO Professor (id_professor, nome, id_depto) VALUES (2071, Andresa Campos, 2620)
-INSERT INTO Professor (id_professor, nome, id_depto) VALUES (3571, Andresa Caldeira, 2620)
-INSERT INTO Professor (id_professor, nome, id_depto) VALUES (441, Adelmiro da Mata, 2620)
-INSERT INTO Professor (id_professor, nome, id_depto) VALUES (8877, Soraia Souza, 2508)
-INSERT INTO Professor (id_professor, nome, id_depto) VALUES (3799, Policarpo Cavalcanti, 2508)
-INSERT INTO Professor (id_professor, nome, id_depto) VALUES (9912, Alana Moura, 2508)
+INSERT INTO Professor (id_professor, nome, id_depto) VALUES (1649, 'Roriz Fogaça', 7742);
+INSERT INTO Professor (id_professor, nome, id_depto) VALUES (721, 'Mair Almeida', 7742);
+INSERT INTO Professor (id_professor, nome, id_depto) VALUES (5025, 'Axel Monteiro', 7742);
+INSERT INTO Professor (id_professor, nome, id_depto) VALUES (6497, 'Edir Lopes', 9999);
+INSERT INTO Professor (id_professor, nome, id_depto) VALUES (7189, 'Délcio Mendes', 9999);
+INSERT INTO Professor (id_professor, nome, id_depto) VALUES (359, 'Sandrino da Rocha', 9999);
+INSERT INTO Professor (id_professor, nome, id_depto) VALUES (1971, 'Cris Dias', 8915);
+INSERT INTO Professor (id_professor, nome, id_depto) VALUES (2120, 'Onofre Monteiro', 8915);
+INSERT INTO Professor (id_professor, nome, id_depto) VALUES (2423, 'Madaleno Costa', 8915);
+INSERT INTO Professor (id_professor, nome, id_depto) VALUES (1135, 'Delfino Barros', 787);
+INSERT INTO Professor (id_professor, nome, id_depto) VALUES (6897, 'Roriz Mendes', 787);
+INSERT INTO Professor (id_professor, nome, id_depto) VALUES (9461, 'Cristiana Dias', 787);
+INSERT INTO Professor (id_professor, nome, id_depto) VALUES (3620, 'Edir Costa', 1536);
+INSERT INTO Professor (id_professor, nome, id_depto) VALUES (1908, 'Delfino Barros', 1536);
+INSERT INTO Professor (id_professor, nome, id_depto) VALUES (6149, 'Cris Barros', 1536);
+INSERT INTO Professor (id_professor, nome, id_depto) VALUES (4648, 'Mair Araújo', 7153);
+INSERT INTO Professor (id_professor, nome, id_depto) VALUES (9904, 'Axel Cardoso', 7153);
+INSERT INTO Professor (id_professor, nome, id_depto) VALUES (1557, 'Madaleno Souza', 7153);
+INSERT INTO Professor (id_professor, nome, id_depto) VALUES (8167, 'Delfino Monteiro', 6334);
+INSERT INTO Professor (id_professor, nome, id_depto) VALUES (3127, 'Ondina Melo', 6334);
+INSERT INTO Professor (id_professor, nome, id_depto) VALUES (5484, 'Adalberto Teixeira', 6334);
+INSERT INTO Professor (id_professor, nome, id_depto) VALUES (5653, 'Adalberto Mendes', 7600);
+INSERT INTO Professor (id_professor, nome, id_depto) VALUES (7502, 'Cris Costa', 7600);
+INSERT INTO Professor (id_professor, nome, id_depto) VALUES (1398, 'Ondina Fogaça', 7600);
 
 -- Gerando Alunos
-INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (5459, Zarco  Rodrigues, 2198)
-INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (3654, Policarpo Rodrigues, 2198)
-INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (5324, Soraia Campos, 2198)
-INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (5018, Dener Rezende, 2198)
-INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (6956, Jordina Rocha, 2198)
-INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (7190, Fernandino Moura, 9171)
-INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (3738, Maur�cio Lima, 9171)
-INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (6246, Adelmiro Rocha, 9171)
-INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (4727, Nia Alves, 9171)
-INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (4222, Policarpo de Souza, 9171)
-INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (8501, Gualdim Campos, 8491)
-INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (6133, Deodora da Cruz, 8491)
-INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (9410, Adelmiro Sales, 8491)
-INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (8774, Benjamim da Mata, 8491)
-INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (1387, Silvestre Foga�a, 8491)
-INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (8571, Dener Caldeira, 5440)
-INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (776, Alana da Cruz, 5440)
-INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (8103, Soraia da Rocha, 5440)
-INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (9742, Fernandino da Mata, 5440)
-INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (9770, Gualdim de Souza, 5440)
-INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (2066, Toni da Mata, 3558)
-INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (7138, Policarpo da Mata, 3558)
-INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (2535, Arquibaldo de Souza, 3558)
-INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (4855, Lohana Foga�a, 3558)
-INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (7890, Soraia Caldeira, 3558)
-INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (8482, Adelmiro de Souza, 946)
-INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (1948, Zarco  da Cruz, 946)
-INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (4403, Benjamim Porto, 946)
-INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (2815, Silvestre Silva, 946)
-INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (1350, Maur�cio da Mata, 946)
-INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (9070, J�nior Porto, 8464)
-INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (1863, Fernanda de Souza, 8464)
-INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (6312, Jordina Sales, 8464)
-INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (8956, Dener da Cruz, 8464)
-INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (1807, Alana Dias, 8464)
-INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (8311, Policarpo Foga�a, 3167)
-INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (7504, Maur�cio Lima, 3167)
-INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (9046, Fernandino Foga�a, 3167)
-INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (7160, Silvestre da Rocha, 3167)
-INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (1178, Arquibaldo Rocha, 3167)
+INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (8895, 'Délcio Barros', 337);
+INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (4288, 'Gualter da Rocha', 337);
+INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (2747, 'Nêuton Mendes', 337);
+INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (3418, 'Josefina Rocha', 337);
+INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (5952, 'Gualter de Souza', 337);
+INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (1643, 'Onofre Barros', 867);
+INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (5426, 'Apolónio Araújo', 867);
+INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (812, 'Cristiana Cardoso', 867);
+INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (9753, 'Axel Mendes', 867);
+INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (4273, 'Quinota Silva', 867);
+INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (3790, 'Adalberto Araújo', 4122);
+INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (422, 'Thaís de Souza', 4122);
+INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (5687, 'Nilce Araújo', 4122);
+INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (9313, 'Mara Silva', 4122);
+INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (2249, 'Sonja Dias', 4122);
+INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (1599, 'Apolónio Viana', 3028);
+INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (5241, 'Adalberto Cardoso', 3028);
+INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (3508, 'Délcio Costa', 3028);
+INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (4878, 'Fred Lopes', 3028);
+INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (3205, 'Quinota Barros', 3028);
+INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (1412, 'Axel Lopes', 4600);
+INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (2843, 'Josefina Melo', 4600);
+INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (2696, 'Mair Araújo', 4600);
+INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (9317, 'Sandrino Costa', 4600);
+INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (8807, 'Quinota Cardoso', 4600);
+INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (9822, 'Mair Viana', 3298);
+INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (7930, 'Diego Barros', 3298);
+INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (5456, 'Nêuton Silva', 3298);
+INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (4337, 'Cris Almeida', 3298);
+INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (2410, 'Sonja Monteiro', 3298);
+INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (7711, 'Nilce Viana', 494);
+INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (7155, 'Diego Araújo', 494);
+INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (5088, 'Nêuton de Souza', 494);
+INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (9255, 'Sonja Barros', 494);
+INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (873, 'Edir Barros', 494);
+INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (5000, 'Onofre Lopes', 7990);
+INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (7503, 'Cristiana Melo', 7990);
+INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (5786, 'Axel Barros', 7990);
+INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (6003, 'Quinota de Souza', 7990);
+INSERT INTO Aluno (id_aluno, nome, id_curso) VALUES (1583, 'Ondina Santos', 7990);
 
 -- Gerando relação Cursa
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 5, 8.67, 5368, 5459)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 8, 4.09, 1382, 5459)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 3, 1.64, 8972, 5459)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 3, 2.54, 2051, 5459)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 6, 5.62, 4038, 5459)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 2, 1.92, 4475, 5459)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 5, 1.55, 5368, 3654)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 8, 0.55, 1382, 3654)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 3, 9.47, 8972, 3654)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 3, 8.02, 2051, 3654)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 6, 7.18, 4038, 3654)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 2, 8.83, 4475, 3654)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 5, 8.67, 5368, 5324)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 8, 3.79, 1382, 5324)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 3, 8.35, 8972, 5324)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 3, 7.38, 2051, 5324)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 6, 8.9, 4038, 5324)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 2, 3.87, 4475, 5324)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 5, 2.07, 5368, 5018)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 8, 2.64, 1382, 5018)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 3, 4.66, 8972, 5018)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 3, 1.32, 2051, 5018)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 6, 3.79, 4038, 5018)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 2, 2.37, 4475, 5018)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 5, 5.61, 5368, 6956)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 8, 2.08, 1382, 6956)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 3, 2.16, 8972, 6956)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 3, 6.98, 2051, 6956)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 6, 9.1, 4038, 6956)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 2, 9.41, 4475, 6956)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 2.26, 9912, 7190)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 1, 1.54, 3812, 7190)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 5.84, 3242, 7190)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 9.48, 5729, 7190)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 8, 1.72, 6615, 7190)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 4.94, 9346, 7190)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 3.13, 9912, 3738)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 1, 0.08, 3812, 3738)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 4.39, 3242, 3738)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 8.37, 5729, 3738)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 8, 6.27, 6615, 3738)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 5.55, 9346, 3738)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 0.61, 9912, 6246)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 1, 4.26, 3812, 6246)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 1.76, 3242, 6246)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 9.96, 5729, 6246)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 8, 1.78, 6615, 6246)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 8.54, 9346, 6246)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 1.62, 9912, 4727)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 1, 6.52, 3812, 4727)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 5.23, 3242, 4727)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 1.82, 5729, 4727)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 8, 5.36, 6615, 4727)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 3.78, 9346, 4727)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 8.26, 9912, 4222)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 1, 4.71, 3812, 4222)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 1.2, 3242, 4222)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 3.57, 5729, 4222)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 8, 6.12, 6615, 4222)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 2.17, 9346, 4222)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 5, 0.07, 8178, 8501)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 1, 5.16, 7526, 8501)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 5, 5.51, 1184, 8501)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 0.83, 5540, 8501)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 6, 1.97, 4006, 8501)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 7, 2.04, 9094, 8501)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 5, 2.25, 8178, 6133)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 1, 0.93, 7526, 6133)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 5, 1.74, 1184, 6133)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 1.82, 5540, 6133)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 6, 8.17, 4006, 6133)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 7, 9.91, 9094, 6133)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 5, 2.97, 8178, 9410)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 1, 7.0, 7526, 9410)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 5, 2.52, 1184, 9410)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 3.86, 5540, 9410)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 6, 0.39, 4006, 9410)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 7, 4.1, 9094, 9410)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 5, 5.58, 8178, 8774)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 1, 7.19, 7526, 8774)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 5, 2.5, 1184, 8774)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 3.37, 5540, 8774)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 6, 3.19, 4006, 8774)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 7, 0.48, 9094, 8774)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 5, 6.55, 8178, 1387)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 1, 1.25, 7526, 1387)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 5, 3.44, 1184, 1387)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 9.66, 5540, 1387)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 6, 5.84, 4006, 1387)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 7, 2.23, 9094, 1387)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 3.57, 5912, 8571)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 8, 8.34, 4187, 8571)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 6, 1.66, 4139, 8571)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 2, 7.82, 1814, 8571)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 1, 0.01, 343, 8571)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 5, 6.68, 9514, 8571)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 6.02, 5912, 776)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 8, 3.13, 4187, 776)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 6, 2.74, 4139, 776)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 2, 1.01, 1814, 776)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 1, 5.02, 343, 776)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 5, 2.08, 9514, 776)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 8.16, 5912, 8103)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 8, 3.76, 4187, 8103)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 6, 1.53, 4139, 8103)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 2, 8.28, 1814, 8103)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 1, 6.47, 343, 8103)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 5, 8.72, 9514, 8103)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 8.07, 5912, 9742)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 8, 5.57, 4187, 9742)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 6, 0.9, 4139, 9742)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 2, 3.92, 1814, 9742)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 1, 7.65, 343, 9742)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 5, 4.99, 9514, 9742)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 5.16, 5912, 9770)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 8, 7.03, 4187, 9770)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 6, 0.76, 4139, 9770)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 2, 3.25, 1814, 9770)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 1, 8.63, 343, 9770)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 5, 1.51, 9514, 9770)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 7, 4.92, 8421, 2066)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 3, 1.74, 6228, 2066)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 3, 7.52, 6911, 2066)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 7, 6.35, 786, 2066)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 8, 2.59, 1674, 2066)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 7, 9.82, 1877, 2066)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 7, 5.69, 8421, 7138)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 3, 9.12, 6228, 7138)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 3, 8.87, 6911, 7138)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 7, 0.31, 786, 7138)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 8, 5.33, 1674, 7138)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 7, 5.98, 1877, 7138)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 7, 0.71, 8421, 2535)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 3, 7.15, 6228, 2535)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 3, 5.83, 6911, 2535)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 7, 3.79, 786, 2535)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 8, 7.77, 1674, 2535)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 7, 7.33, 1877, 2535)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 7, 3.88, 8421, 4855)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 3, 0.67, 6228, 4855)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 3, 4.71, 6911, 4855)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 7, 4.46, 786, 4855)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 8, 4.7, 1674, 4855)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 7, 0.98, 1877, 4855)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 7, 9.17, 8421, 7890)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 3, 2.39, 6228, 7890)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 3, 7.67, 6911, 7890)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 7, 3.92, 786, 7890)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 8, 7.44, 1674, 7890)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 7, 4.22, 1877, 7890)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 6, 6.87, 3151, 8482)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 2, 1.19, 1163, 8482)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 7, 5.67, 8055, 8482)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 8, 8.41, 5212, 8482)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 3, 5.43, 8877, 8482)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 7, 7.37, 9110, 8482)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 6, 8.43, 3151, 1948)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 2, 8.45, 1163, 1948)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 7, 3.27, 8055, 1948)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 8, 0.14, 5212, 1948)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 3, 9.65, 8877, 1948)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 7, 4.14, 9110, 1948)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 6, 6.3, 3151, 4403)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 2, 4.79, 1163, 4403)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 7, 6.18, 8055, 4403)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 8, 8.63, 5212, 4403)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 3, 3.88, 8877, 4403)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 7, 5.89, 9110, 4403)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 6, 3.01, 3151, 2815)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 2, 8.12, 1163, 2815)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 7, 2.54, 8055, 2815)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 8, 5.12, 5212, 2815)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 3, 1.86, 8877, 2815)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 7, 4.66, 9110, 2815)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 6, 3.57, 3151, 1350)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 2, 8.65, 1163, 1350)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 7, 4.27, 8055, 1350)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 8, 8.11, 5212, 1350)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 3, 4.57, 8877, 1350)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 7, 9.57, 9110, 1350)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 3, 9.49, 1063, 9070)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 2, 6.67, 7440, 9070)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 3, 2.22, 9848, 9070)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 7, 7.55, 5453, 9070)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 8, 5.68, 1061, 9070)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 8, 2.11, 3604, 9070)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 3, 9.32, 1063, 1863)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 2, 2.82, 7440, 1863)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 3, 3.53, 9848, 1863)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 7, 1.42, 5453, 1863)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 8, 5.31, 1061, 1863)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 8, 1.91, 3604, 1863)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 3, 2.0, 1063, 6312)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 2, 4.69, 7440, 6312)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 3, 6.74, 9848, 6312)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 7, 1.97, 5453, 6312)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 8, 2.31, 1061, 6312)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 8, 6.04, 3604, 6312)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 3, 4.92, 1063, 8956)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 2, 4.77, 7440, 8956)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 3, 7.58, 9848, 8956)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 7, 8.6, 5453, 8956)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 8, 0.36, 1061, 8956)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 8, 0.23, 3604, 8956)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 3, 7.81, 1063, 1807)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 2, 0.01, 7440, 1807)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 3, 6.77, 9848, 1807)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 7, 4.03, 5453, 1807)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 8, 8.0, 1061, 1807)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 8, 7.35, 3604, 1807)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 6, 4.06, 5166, 8311)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 1, 4.21, 9212, 8311)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 5, 7.46, 615, 8311)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 4.22, 3118, 8311)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 8, 6.75, 8814, 8311)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 3, 8.81, 199, 8311)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 6, 7.5, 5166, 7504)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 1, 6.18, 9212, 7504)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 5, 1.05, 615, 7504)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 5.58, 3118, 7504)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 8, 4.71, 8814, 7504)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 3, 6.45, 199, 7504)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 6, 5.61, 5166, 9046)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 1, 4.34, 9212, 9046)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 5, 8.93, 615, 9046)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 3.07, 3118, 9046)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 8, 9.81, 8814, 9046)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 3, 3.48, 199, 9046)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 6, 8.78, 5166, 7160)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 1, 5.5, 9212, 7160)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 5, 1.59, 615, 7160)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 9.88, 3118, 7160)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 8, 7.89, 8814, 7160)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 3, 3.96, 199, 7160)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 6, 4.0, 5166, 1178)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 1, 9.33, 9212, 1178)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 5, 2.73, 615, 1178)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 4.79, 3118, 1178)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 8, 6.32, 8814, 1178)
-INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 3, 4.34, 199, 1178)
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 0.46, 657, 8895);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 8, 7.71, 469, 8895);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 5, 7.48, 2910, 8895);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 8.67, 2304, 8895);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 2, 4.17, 8131, 8895);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 3, 0.43, 2896, 8895);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 6.78, 657, 4288);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 8, 0.28, 469, 4288);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 5, 7.22, 2910, 4288);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 3.46, 2304, 4288);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 2, 7.51, 8131, 4288);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 3, 6.18, 2896, 4288);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 3.15, 657, 2747);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 8, 6.06, 469, 2747);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 5, 0.7, 2910, 2747);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 2.78, 2304, 2747);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 2, 5.95, 8131, 2747);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 3, 1.8, 2896, 2747);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 9.71, 657, 3418);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 8, 6.86, 469, 3418);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 5, 4.89, 2910, 3418);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 4.86, 2304, 3418);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 2, 0.83, 8131, 3418);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 3, 2.94, 2896, 3418);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 0.01, 657, 5952);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 8, 8.2, 469, 5952);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 5, 2.3, 2910, 5952);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 3.38, 2304, 5952);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 2, 3.1, 8131, 5952);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 3, 2.93, 2896, 5952);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 5, 3.94, 5453, 1643);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 7, 6.98, 8538, 1643);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 7, 8.26, 110, 1643);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 3.83, 9598, 1643);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 3, 1.98, 7470, 1643);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 8, 5.34, 5413, 1643);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 5, 9.74, 5453, 5426);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 7, 0.91, 8538, 5426);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 7, 0.56, 110, 5426);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 3.55, 9598, 5426);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 3, 5.94, 7470, 5426);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 8, 7.46, 5413, 5426);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 5, 5.11, 5453, 812);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 7, 2.41, 8538, 812);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 7, 0.89, 110, 812);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 4.89, 9598, 812);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 3, 0.14, 7470, 812);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 8, 6.88, 5413, 812);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 5, 3.79, 5453, 9753);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 7, 3.1, 8538, 9753);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 7, 2.07, 110, 9753);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 6.02, 9598, 9753);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 3, 1.55, 7470, 9753);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 8, 0.11, 5413, 9753);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 5, 6.4, 5453, 4273);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 7, 9.27, 8538, 4273);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 7, 1.7, 110, 4273);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 8.27, 9598, 4273);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 3, 8.99, 7470, 4273);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 8, 6.86, 5413, 4273);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 0.28, 36, 3790);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 2, 9.91, 8261, 3790);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 3.25, 7145, 3790);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 5, 2.9, 9031, 3790);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 8, 9.77, 2123, 3790);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 5, 5.38, 8826, 3790);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 3.76, 36, 422);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 2, 4.92, 8261, 422);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 7.27, 7145, 422);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 5, 0.79, 9031, 422);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 8, 4.7, 2123, 422);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 5, 2.69, 8826, 422);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 3.02, 36, 5687);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 2, 2.42, 8261, 5687);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 8.14, 7145, 5687);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 5, 5.24, 9031, 5687);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 8, 8.0, 2123, 5687);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 5, 7.07, 8826, 5687);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 1.62, 36, 9313);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 2, 9.67, 8261, 9313);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 7.62, 7145, 9313);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 5, 0.74, 9031, 9313);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 8, 8.41, 2123, 9313);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 5, 5.79, 8826, 9313);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 4.79, 36, 2249);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 2, 9.67, 8261, 2249);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 0.87, 7145, 2249);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 5, 1.95, 9031, 2249);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 8, 8.41, 2123, 2249);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 5, 7.22, 8826, 2249);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 8, 0.72, 4102, 1599);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 0.66, 5193, 1599);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 7, 1.05, 6231, 1599);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 7, 3.36, 2011, 1599);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 2.07, 1663, 1599);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 7, 2.31, 462, 1599);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 8, 5.88, 4102, 5241);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 5.7, 5193, 5241);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 7, 9.48, 6231, 5241);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 7, 6.58, 2011, 5241);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 6.75, 1663, 5241);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 7, 7.92, 462, 5241);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 8, 2.87, 4102, 3508);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 0.67, 5193, 3508);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 7, 3.25, 6231, 3508);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 7, 0.08, 2011, 3508);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 7.08, 1663, 3508);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 7, 6.49, 462, 3508);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 8, 1.31, 4102, 4878);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 2.86, 5193, 4878);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 7, 4.2, 6231, 4878);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 7, 4.86, 2011, 4878);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 2.5, 1663, 4878);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 7, 7.3, 462, 4878);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 8, 4.73, 4102, 3205);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 7.02, 5193, 3205);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 7, 7.98, 6231, 3205);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 7, 9.24, 2011, 3205);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 2.97, 1663, 3205);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 7, 7.0, 462, 3205);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 7, 3.72, 2971, 1412);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 5, 5.1, 3959, 1412);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 3, 0.32, 2324, 1412);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 8, 2.58, 4269, 1412);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 6, 9.18, 1332, 1412);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 5, 7.2, 54, 1412);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 7, 6.9, 2971, 2843);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 5, 9.68, 3959, 2843);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 3, 6.77, 2324, 2843);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 8, 7.67, 4269, 2843);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 6, 9.03, 1332, 2843);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 5, 9.15, 54, 2843);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 7, 6.49, 2971, 2696);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 5, 3.81, 3959, 2696);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 3, 6.55, 2324, 2696);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 8, 0.97, 4269, 2696);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 6, 0.33, 1332, 2696);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 5, 0.64, 54, 2696);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 7, 8.62, 2971, 9317);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 5, 5.23, 3959, 9317);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 3, 6.04, 2324, 9317);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 8, 6.43, 4269, 9317);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 6, 5.11, 1332, 9317);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 5, 2.85, 54, 9317);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 7, 8.28, 2971, 8807);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 5, 5.46, 3959, 8807);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 3, 8.48, 2324, 8807);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 8, 9.82, 4269, 8807);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 6, 6.32, 1332, 8807);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 5, 6.28, 54, 8807);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 5, 2.08, 9213, 9822);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 2, 4.91, 219, 9822);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 8.51, 9246, 9822);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 8.8, 7738, 9822);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 7, 3.34, 2460, 9822);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 1, 2.11, 356, 9822);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 5, 2.09, 9213, 7930);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 2, 7.6, 219, 7930);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 8.24, 9246, 7930);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 2.84, 7738, 7930);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 7, 7.14, 2460, 7930);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 1, 8.63, 356, 7930);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 5, 6.17, 9213, 5456);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 2, 3.9, 219, 5456);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 5.49, 9246, 5456);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 7.41, 7738, 5456);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 7, 4.92, 2460, 5456);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 1, 4.12, 356, 5456);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 5, 2.42, 9213, 4337);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 2, 0.8, 219, 4337);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 5.45, 9246, 4337);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 0.1, 7738, 4337);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 7, 2.47, 2460, 4337);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 1, 6.61, 356, 4337);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 5, 7.38, 9213, 2410);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 2, 4.1, 219, 2410);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 9.63, 9246, 2410);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 1.87, 7738, 2410);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2023, 7, 2.9, 2460, 2410);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 1, 4.72, 356, 2410);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 5, 7.04, 6729, 7711);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 1, 3.67, 2051, 7711);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 1, 3.85, 8147, 7711);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 2, 2.48, 2033, 7711);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 9.35, 3405, 7711);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 8.65, 4409, 7711);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 5, 5.37, 6729, 7155);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 1, 9.77, 2051, 7155);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 1, 2.74, 8147, 7155);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 2, 3.58, 2033, 7155);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 2.47, 3405, 7155);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 0.89, 4409, 7155);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 5, 5.51, 6729, 5088);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 1, 5.82, 2051, 5088);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 1, 1.1, 8147, 5088);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 2, 3.8, 2033, 5088);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 9.18, 3405, 5088);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 9.38, 4409, 5088);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 5, 4.27, 6729, 9255);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 1, 1.88, 2051, 9255);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 1, 0.3, 8147, 9255);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 2, 3.63, 2033, 9255);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 6.33, 3405, 9255);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 3.7, 4409, 9255);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 5, 9.44, 6729, 873);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 1, 2.21, 2051, 873);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 1, 3.09, 8147, 873);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 2, 4.94, 2033, 873);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 9.25, 3405, 873);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 4, 6.72, 4409, 873);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 3, 6.04, 1246, 5000);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 6, 8.04, 9005, 5000);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 2, 9.17, 7456, 5000);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 1, 2.22, 8234, 5000);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 3, 0.04, 3178, 5000);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 2, 5.26, 95, 5000);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 3, 7.06, 1246, 7503);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 6, 2.58, 9005, 7503);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 2, 1.16, 7456, 7503);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 1, 9.15, 8234, 7503);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 3, 4.78, 3178, 7503);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 2, 5.48, 95, 7503);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 3, 7.08, 1246, 5786);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 6, 4.82, 9005, 5786);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 2, 4.2, 7456, 5786);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 1, 5.83, 8234, 5786);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 3, 4.53, 3178, 5786);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 2, 9.11, 95, 5786);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 3, 3.13, 1246, 6003);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 6, 6.96, 9005, 6003);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 2, 3.47, 7456, 6003);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 1, 4.68, 8234, 6003);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 3, 1.19, 3178, 6003);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 2, 9.38, 95, 6003);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 3, 1.68, 1246, 1583);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2022, 6, 5.3, 9005, 1583);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 2, 2.6, 7456, 1583);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 1, 2.21, 8234, 1583);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2021, 3, 8.07, 3178, 1583);
+INSERT INTO Cursa (ano, semestre, nota, id_disciplina, id_aluno) VALUES (2020, 2, 3.25, 95, 1583);
 
 -- Gerando TCC
-INSERT INTO TCC (id_tcc, titulo) VALUES (5676, Projeto XAP)
-INSERT INTO TCC (id_tcc, titulo) VALUES (477, Projeto WLE)
-INSERT INTO TCC (id_tcc, titulo) VALUES (5636, Projeto IUO)
-INSERT INTO TCC (id_tcc, titulo) VALUES (4275, Projeto PQW)
+INSERT INTO TCC (id_tcc, titulo) VALUES (8597, 'Projeto ULR');
+INSERT INTO TCC (id_tcc, titulo) VALUES (4003, 'Projeto ILJ');
+INSERT INTO TCC (id_tcc, titulo) VALUES (8826, 'Projeto NTI');
+INSERT INTO TCC (id_tcc, titulo) VALUES (2878, 'Projeto LQN');
 
 -- Gerando relação Participa
-INSERT INTO Participa (id_tcc, id_professor, id_aluno) VALUES (5676, 3841, 5459)
-INSERT INTO Participa (id_tcc, id_professor, id_aluno) VALUES (5676, 3841, 3654)
-INSERT INTO Participa (id_tcc, id_professor, id_aluno) VALUES (5676, 3841, 5324)
-INSERT INTO Participa (id_tcc, id_professor, id_aluno) VALUES (5676, 3841, 5018)
-INSERT INTO Participa (id_tcc, id_professor, id_aluno) VALUES (5676, 3841, 6956)
-INSERT INTO Participa (id_tcc, id_professor, id_aluno) VALUES (477, 8418, 7190)
-INSERT INTO Participa (id_tcc, id_professor, id_aluno) VALUES (477, 8418, 3738)
-INSERT INTO Participa (id_tcc, id_professor, id_aluno) VALUES (477, 8418, 6246)
-INSERT INTO Participa (id_tcc, id_professor, id_aluno) VALUES (477, 8418, 4727)
-INSERT INTO Participa (id_tcc, id_professor, id_aluno) VALUES (477, 8418, 4222)
-INSERT INTO Participa (id_tcc, id_professor, id_aluno) VALUES (5636, 9711, 8501)
-INSERT INTO Participa (id_tcc, id_professor, id_aluno) VALUES (5636, 9711, 6133)
-INSERT INTO Participa (id_tcc, id_professor, id_aluno) VALUES (5636, 9711, 9410)
-INSERT INTO Participa (id_tcc, id_professor, id_aluno) VALUES (5636, 9711, 8774)
-INSERT INTO Participa (id_tcc, id_professor, id_aluno) VALUES (5636, 9711, 1387)
-INSERT INTO Participa (id_tcc, id_professor, id_aluno) VALUES (4275, 9117, 8571)
-INSERT INTO Participa (id_tcc, id_professor, id_aluno) VALUES (4275, 9117, 776)
-INSERT INTO Participa (id_tcc, id_professor, id_aluno) VALUES (4275, 9117, 8103)
-INSERT INTO Participa (id_tcc, id_professor, id_aluno) VALUES (4275, 9117, 9742)
-INSERT INTO Participa (id_tcc, id_professor, id_aluno) VALUES (4275, 9117, 9770)
+INSERT INTO Participa (id_tcc, id_professor, id_aluno) VALUES (8597, 1649, 8895);
+INSERT INTO Participa (id_tcc, id_professor, id_aluno) VALUES (8597, 1649, 4288);
+INSERT INTO Participa (id_tcc, id_professor, id_aluno) VALUES (8597, 1649, 2747);
+INSERT INTO Participa (id_tcc, id_professor, id_aluno) VALUES (8597, 1649, 3418);
+INSERT INTO Participa (id_tcc, id_professor, id_aluno) VALUES (8597, 1649, 5952);
+INSERT INTO Participa (id_tcc, id_professor, id_aluno) VALUES (4003, 721, 1643);
+INSERT INTO Participa (id_tcc, id_professor, id_aluno) VALUES (4003, 721, 5426);
+INSERT INTO Participa (id_tcc, id_professor, id_aluno) VALUES (4003, 721, 812);
+INSERT INTO Participa (id_tcc, id_professor, id_aluno) VALUES (4003, 721, 9753);
+INSERT INTO Participa (id_tcc, id_professor, id_aluno) VALUES (4003, 721, 4273);
+INSERT INTO Participa (id_tcc, id_professor, id_aluno) VALUES (8826, 5025, 3790);
+INSERT INTO Participa (id_tcc, id_professor, id_aluno) VALUES (8826, 5025, 422);
+INSERT INTO Participa (id_tcc, id_professor, id_aluno) VALUES (8826, 5025, 5687);
+INSERT INTO Participa (id_tcc, id_professor, id_aluno) VALUES (8826, 5025, 9313);
+INSERT INTO Participa (id_tcc, id_professor, id_aluno) VALUES (8826, 5025, 2249);
+INSERT INTO Participa (id_tcc, id_professor, id_aluno) VALUES (2878, 6497, 1599);
+INSERT INTO Participa (id_tcc, id_professor, id_aluno) VALUES (2878, 6497, 5241);
+INSERT INTO Participa (id_tcc, id_professor, id_aluno) VALUES (2878, 6497, 3508);
+INSERT INTO Participa (id_tcc, id_professor, id_aluno) VALUES (2878, 6497, 4878);
+INSERT INTO Participa (id_tcc, id_professor, id_aluno) VALUES (2878, 6497, 3205);
 
 -- Gerando relação Leciona
-INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2021, 5, 5368, 3841)
-INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2020, 8, 1382, 3841)
-INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2020, 3, 8972, 8418)
-INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2023, 3, 2051, 8418)
-INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2022, 6, 4038, 9711)
-INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2024, 2, 4475, 9711)
-INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2020, 4, 9912, 9117)
-INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2022, 1, 3812, 9117)
-INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2024, 4, 3242, 1606)
-INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2023, 4, 5729, 1606)
-INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2021, 8, 6615, 3988)
-INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2023, 4, 9346, 3988)
-INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2022, 5, 8178, 5011)
-INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2023, 1, 7526, 5011)
-INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2021, 5, 1184, 7760)
-INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2024, 4, 5540, 7760)
-INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2022, 6, 4006, 8062)
-INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2024, 7, 9094, 8062)
-INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2024, 4, 5912, 4419)
-INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2024, 8, 4187, 4419)
-INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2022, 6, 4139, 138)
-INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2021, 2, 1814, 138)
-INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2022, 1, 343, 1394)
-INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2021, 5, 9514, 1394)
-INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2022, 7, 8421, 1727)
-INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2021, 3, 6228, 1727)
-INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2024, 3, 6911, 1747)
-INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2024, 7, 786, 1747)
-INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2021, 8, 1674, 1751)
-INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2022, 7, 1877, 1751)
-INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2022, 6, 3151, 563)
-INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2024, 2, 1163, 563)
-INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2024, 7, 8055, 4426)
-INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2020, 8, 5212, 4426)
-INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2020, 3, 8877, 7630)
-INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2023, 7, 9110, 7630)
-INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2024, 3, 1063, 2071)
-INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2024, 2, 7440, 2071)
-INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2021, 3, 9848, 3571)
-INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2020, 7, 5453, 3571)
-INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2024, 8, 1061, 441)
-INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2021, 8, 3604, 441)
-INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2021, 6, 5166, 8877)
-INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2020, 1, 9212, 8877)
-INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2021, 5, 615, 3799)
-INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2023, 4, 3118, 3799)
-INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2021, 8, 8814, 9912)
-INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2021, 3, 199, 9912)
+INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2020, 4, 657, 1649);
+INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2022, 8, 469, 1649);
+INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2023, 5, 2910, 721);
+INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2020, 4, 2304, 721);
+INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2024, 2, 8131, 5025);
+INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2020, 3, 2896, 5025);
+INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2020, 5, 5453, 6497);
+INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2023, 7, 8538, 6497);
+INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2024, 7, 110, 7189);
+INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2024, 4, 9598, 7189);
+INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2020, 3, 7470, 359);
+INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2020, 8, 5413, 359);
+INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2020, 4, 36, 1971);
+INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2021, 2, 8261, 1971);
+INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2020, 4, 7145, 2120);
+INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2021, 5, 9031, 2120);
+INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2024, 8, 2123, 2423);
+INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2022, 5, 8826, 2423);
+INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2022, 8, 4102, 1135);
+INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2021, 4, 5193, 1135);
+INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2021, 7, 6231, 6897);
+INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2023, 7, 2011, 6897);
+INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2023, 4, 1663, 9461);
+INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2021, 7, 462, 9461);
+INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2024, 7, 2971, 3620);
+INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2020, 5, 3959, 3620);
+INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2024, 3, 2324, 1908);
+INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2020, 8, 4269, 1908);
+INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2022, 6, 1332, 6149);
+INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2023, 5, 54, 6149);
+INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2024, 5, 9213, 4648);
+INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2020, 2, 219, 4648);
+INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2022, 4, 9246, 9904);
+INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2023, 4, 7738, 9904);
+INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2020, 7, 2460, 1557);
+INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2023, 1, 356, 1557);
+INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2022, 5, 6729, 8167);
+INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2022, 1, 2051, 8167);
+INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2021, 1, 8147, 3127);
+INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2024, 2, 2033, 3127);
+INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2022, 4, 3405, 5484);
+INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2023, 4, 4409, 5484);
+INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2020, 3, 1246, 5653);
+INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2024, 6, 9005, 5653);
+INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2020, 2, 7456, 7502);
+INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2023, 1, 8234, 7502);
+INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2021, 3, 3178, 1398);
+INSERT INTO Leciona (ano, semestre, id_disciplina, id_professor) VALUES (2022, 2, 95, 1398);
 
 -- Atualizando tabelas co-depêndentes
-UPDATE Departamento SET id_professor = 3841 WHERE id_depto = 7106
-UPDATE Departamento SET id_professor = 9117 WHERE id_depto = 8079
-UPDATE Departamento SET id_professor = 5011 WHERE id_depto = 2259
-UPDATE Departamento SET id_professor = 4419 WHERE id_depto = 6580
-UPDATE Departamento SET id_professor = 1727 WHERE id_depto = 8315
-UPDATE Departamento SET id_professor = 563 WHERE id_depto = 7091
-UPDATE Departamento SET id_professor = 2071 WHERE id_depto = 2620
-UPDATE Departamento SET id_professor = 8877 WHERE id_depto = 2508
+UPDATE Departamento SET id_professor = 1649 WHERE id_depto = 7742;
+UPDATE Departamento SET id_professor = 6497 WHERE id_depto = 9999;
+UPDATE Departamento SET id_professor = 1971 WHERE id_depto = 8915;
+UPDATE Departamento SET id_professor = 1135 WHERE id_depto = 787;
+UPDATE Departamento SET id_professor = 3620 WHERE id_depto = 1536;
+UPDATE Departamento SET id_professor = 4648 WHERE id_depto = 7153;
+UPDATE Departamento SET id_professor = 8167 WHERE id_depto = 6334;
+UPDATE Departamento SET id_professor = 5653 WHERE id_depto = 7600;
 
-UPDATE Curso SET id_matriz = 7445 WHERE id_curso = 2198
-UPDATE Curso SET id_matriz = 5862 WHERE id_curso = 9171
-UPDATE Curso SET id_matriz = 2423 WHERE id_curso = 8491
-UPDATE Curso SET id_matriz = 8941 WHERE id_curso = 5440
-UPDATE Curso SET id_matriz = 2945 WHERE id_curso = 3558
-UPDATE Curso SET id_matriz = 8192 WHERE id_curso = 946
-UPDATE Curso SET id_matriz = 9326 WHERE id_curso = 8464
-UPDATE Curso SET id_matriz = 2160 WHERE id_curso = 3167
+UPDATE Curso SET id_matriz = 1387 WHERE id_curso = 337;
+UPDATE Curso SET id_matriz = 3333 WHERE id_curso = 867;
+UPDATE Curso SET id_matriz = 6787 WHERE id_curso = 4122;
+UPDATE Curso SET id_matriz = 3655 WHERE id_curso = 3028;
+UPDATE Curso SET id_matriz = 383 WHERE id_curso = 4600;
+UPDATE Curso SET id_matriz = 2905 WHERE id_curso = 3298;
+UPDATE Curso SET id_matriz = 2408 WHERE id_curso = 494;
+UPDATE Curso SET id_matriz = 8678 WHERE id_curso = 7990;
