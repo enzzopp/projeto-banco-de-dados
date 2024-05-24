@@ -13,30 +13,6 @@ O sistema de gestão de faculdade abrange as seguintes funcionalidades e estrutu
 - **Professores:** Cada departamento possui 3 professores, sendo um deles o chefe do departamento. Cada professor leciona 2 disciplinas do curso.
 - **Trabalho de Conclusão de Curso (TCC):** Existem 4 grupos de TCC, cada um composto por 5 alunos e orientado por 1 professor.
 
-### Estrutura do Sistema
-
-- **1 Departamento -> 1 Curso**
-- **1 Curso -> 1 Matriz Curricular**
-- **1 Matriz Curricular -> 6 Disciplinas**
-- **1 Curso -> 5 Alunos**
-
-### Funcionalidades Principais
-
-#### Criando Aluno
-
-- Alunos são criados relacionados a um curso específico e são atribuídos às disciplinas da matriz curricular desse curso.
-
-#### Criando Professor
-
-- Cada departamento tem 3 professores.
-- O primeiro professor criado é o chefe do departamento.
-- Cada professor leciona 2 disciplinas do curso do departamento.
-
-#### TCC
-
-- Existem 4 grupos de TCC.
-- Cada grupo é composto por 5 alunos e orientado por 1 professor.
-
 ## Tecnologias Utilizadas
 
 - **SGBD:** CockroachDB
